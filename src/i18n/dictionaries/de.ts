@@ -192,7 +192,7 @@ export const de: PortfolioDictionary = {
   skills: [
     { name: "Qualitätsmanagement", level: 4 },
     { name: "Softwareentwicklung", level: 4 },
-    { name: "Business Analysis", level: 3 },
+    { name: "Business Analysis", level: 5 },
     { name: "User Experience", level: 5 },
     { name: "User Interface", level: 4 },
     { name: "Teamplayer", level: 5 },
