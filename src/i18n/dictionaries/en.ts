@@ -30,7 +30,8 @@ export const en: PortfolioDictionary = {
   projectsSection: {
     eyebrow: "Projects",
     title: "What I have worked on",
-    intro: "An overview of projects from freelance work and client engagements/agency work.",
+    intro:
+      "An overview of projects from freelance work and client engagements/agency work.",
   },
   educationSection: {
     eyebrow: "Education",
@@ -92,6 +93,12 @@ export const en: PortfolioDictionary = {
     imprint: "Legal notice",
     privacy: "Privacy",
     roleSuffix: "Developer",
+  },
+  cv: {
+    documentLabel: "Curriculum Vitae",
+    fileName: "Stefan-Scheifel-CV.pdf",
+    highlights: "Highlights",
+    download: "Download PDF",
   },
   site: {
     title: "Stefan Scheifel | Front End Developer",

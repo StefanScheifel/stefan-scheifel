@@ -127,6 +127,12 @@ export type PortfolioDictionary = {
     privacy: string;
     roleSuffix: string;
   };
+  cv: {
+    documentLabel: string;
+    fileName: string;
+    highlights: string;
+    download: string;
+  };
   site: {
     title: string;
     description: string;

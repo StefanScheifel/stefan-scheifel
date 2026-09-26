@@ -32,3 +32,7 @@ export function localePath(locale: Locale, path = ""): string {
   const normalized = path.startsWith("/") ? path : path ? `/${path}` : "";
   return `/${locale}${normalized}`;
 }
+
+export function cvPath(locale: Locale): string {
+  return localePath(locale, "/cv");
+}

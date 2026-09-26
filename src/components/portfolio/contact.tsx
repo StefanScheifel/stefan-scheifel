@@ -1,13 +1,14 @@
 "use client";
 
-import { Mail, Phone } from "lucide-react";
+import { FileDown, Mail, Phone } from "lucide-react";
 import ContactForm from "@/components/portfolio/contact-form";
 import SectionHeader from "@/components/portfolio/section-header";
+import { cvPath } from "@/i18n/get-dictionary";
 import { usePortfolio } from "@/i18n/locale-provider";
 
 export default function ContactSection() {
-  const { dict } = usePortfolio();
-  const { contact, profile } = dict;
+  const { locale, dict } = usePortfolio();
+  const { contact, profile, cv } = dict;
   return (
     <section id="contact" className="scroll-mt-24 py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -29,7 +30,9 @@ export default function ContactSection() {
                   <Mail className="h-5 w-5 text-accent" />
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground">{contact.emailLabel}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {contact.emailLabel}
+                  </p>
                   <p className="font-medium text-foreground">{profile.email}</p>
                 </div>
               </a>
@@ -42,8 +45,26 @@ export default function ContactSection() {
                   <Phone className="h-5 w-5 text-accent" />
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground">{contact.phoneLabel}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {contact.phoneLabel}
+                  </p>
                   <p className="font-medium text-foreground">{profile.phone}</p>
+                </div>
+              </a>
+
+              <a
+                href={cvPath(locale)}
+                download={cv.fileName}
+                className="flex items-center gap-4 rounded-2xl border border-white/10 bg-background/50 p-5 transition-colors hover:border-accent/30"
+              >
+                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent/10">
+                  <FileDown className="h-5 w-5 text-accent" />
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">
+                    {cv.documentLabel}
+                  </p>
+                  <p className="font-medium text-foreground">{cv.download}</p>
                 </div>
               </a>
             </div>

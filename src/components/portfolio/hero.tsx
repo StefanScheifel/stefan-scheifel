@@ -1,10 +1,10 @@
 "use client";
 
-import { ArrowDown, Mail } from "lucide-react";
+import { ArrowDown, FileText, Mail } from "lucide-react";
 import AnimatedName from "@/components/portfolio/animated-name";
 import Eyebrow from "@/components/portfolio/eyebrow";
 import HeroContactCard from "@/components/portfolio/hero-contact-card";
-import { localePath } from "@/i18n/get-dictionary";
+import { cvPath, localePath } from "@/i18n/get-dictionary";
 import { usePortfolio } from "@/i18n/locale-provider";
 
 export default function HeroSection() {
@@ -38,9 +38,12 @@ export default function HeroSection() {
               {hero.emailCta}
             </a>
             <a
-              href={`${localePath(locale)}#experience`}
+              href={cvPath(locale)}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-white/10 px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-accent/40 hover:text-accent"
             >
+              <FileText className="h-4 w-4" />
               {hero.resumeCta}
             </a>
           </div>
