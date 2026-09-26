@@ -30,7 +30,8 @@ export const de: PortfolioDictionary = {
   projectsSection: {
     eyebrow: "Projekte",
     title: "Ausgewählte Arbeiten",
-    intro: "Ein Überblick über Projekte aus Freelance-Tätigkeit und Kundenarbeit.",
+    intro:
+      "Ein Überblick über Projekte aus Freelance-Tätigkeit und Kundenarbeit.",
   },
   educationSection: {
     eyebrow: "Ausbildung",
@@ -67,7 +68,8 @@ export const de: PortfolioDictionary = {
       privacySuffix: "zu.",
       submit: "Nachricht senden",
       sending: "Wird gesendet …",
-      success: "Danke! Ihre Nachricht wurde gesendet. Ich melde mich bei Ihnen.",
+      success:
+        "Danke! Ihre Nachricht wurde gesendet. Ich melde mich bei Ihnen.",
       error:
         "Die Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder schreiben Sie mir direkt per E-Mail.",
       notConfigured:
@@ -92,6 +94,12 @@ export const de: PortfolioDictionary = {
     imprint: "Impressum",
     privacy: "Datenschutz",
     roleSuffix: "Developer",
+  },
+  cv: {
+    documentLabel: "Lebenslauf",
+    fileName: "Stefan-Scheifel-Lebenslauf.pdf",
+    highlights: "Schwerpunkte",
+    download: "PDF herunterladen",
   },
   site: {
     title: "Stefan Scheifel | Front End Developer",
