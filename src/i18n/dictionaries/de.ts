@@ -91,7 +91,7 @@ export const de: PortfolioDictionary = {
   footer: {
     imprint: "Impressum",
     privacy: "Datenschutz",
-    roleSuffix: "Front End Developer",
+    roleSuffix: "Developer",
   },
   site: {
     title: "Stefan Scheifel | Front End Developer",
@@ -192,8 +192,8 @@ export const de: PortfolioDictionary = {
   skills: [
     { name: "Qualitätsmanagement", level: 4 },
     { name: "Softwareentwicklung", level: 4 },
-    { name: "Business Analysis", level: 3 },
-    { name: "User Experience", level: 5 },
+    { name: "Business Analysis", level: 5 },
+    { name: "User Experience", level: 4 },
     { name: "User Interface", level: 4 },
     { name: "Teamplayer", level: 5 },
     { name: "Projekterfahrung", level: 4 },
