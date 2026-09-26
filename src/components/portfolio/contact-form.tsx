@@ -22,13 +22,14 @@ export default function ContactForm() {
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    const formElement = event.currentTarget;
 
     if (!accessKey) {
       setStatus("error");
       return;
     }
 
-    const formData = new FormData(event.currentTarget);
+    const formData = new FormData(formElement);
     const payload = {
       access_key: accessKey,
       name: formData.get("name"),
@@ -54,8 +55,8 @@ export default function ContactForm() {
       const result = await response.json();
 
       if (response.ok && result.success) {
+        formElement.reset();
         setStatus("success");
-        event.currentTarget.reset();
         return;
       }
 
