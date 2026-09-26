@@ -91,7 +91,7 @@ export const en: PortfolioDictionary = {
   footer: {
     imprint: "Legal notice",
     privacy: "Privacy",
-    roleSuffix: "Front End Developer",
+    roleSuffix: "Developer",
   },
   site: {
     title: "Stefan Scheifel | Front End Developer",
