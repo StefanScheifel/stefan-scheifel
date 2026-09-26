@@ -11,7 +11,7 @@ export const de: PortfolioDictionary = {
   },
   hero: {
     intro:
-      "Individuelle Software zum bezahlbaren Preis für kleine und mittelständische Unternehmen",
+      "Individuelle Software und Unterstützung für bestehende Teams.",
     emailCta: "E-Mail schreiben",
     resumeCta: "Lebenslauf ansehen",
     scrollAriaLabel: "Weiter zu Skills",

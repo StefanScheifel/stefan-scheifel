@@ -11,7 +11,7 @@ export const en: PortfolioDictionary = {
   },
   hero: {
     intro:
-      "Custom software at affordable rates for small and medium-sized businesses",
+      "Custom software and support for existing teams.",
     emailCta: "Send email",
     resumeCta: "View résumé",
     scrollAriaLabel: "Continue to skills",
